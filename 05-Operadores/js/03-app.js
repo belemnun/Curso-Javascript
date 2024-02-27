@@ -12,5 +12,4 @@ console.log(numero2);
 
 console.log(numero === numero2);
 
-Belem
 
