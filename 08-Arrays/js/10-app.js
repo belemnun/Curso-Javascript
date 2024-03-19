@@ -8,6 +8,8 @@ const carrito = [
     {nombre: "Celular", precio: 700 },
 ]
 
+
+// .map crea un nuevo arreglo y forEach no crea ningún otro arreglo, esa es la deferencia.
 const nuevoArreglo = carrito.map ( function(producto) {
 return ( `${producto.nombre} - precio: ${producto.precio }` );
 
