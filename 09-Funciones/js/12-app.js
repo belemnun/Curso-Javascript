@@ -1,4 +1,4 @@
-// Arrow Functions en un forEach y un map
+
 
 const carrito = [
     {nombre: "Monitor 27 Pulgadas", precio: 500 },
@@ -10,17 +10,10 @@ const carrito = [
 ]
 
 
-// .map crea un nuevo arreglo y forEach no crea ningún otro arreglo, esa es la deferencia.
-const nuevoArreglo = carrito.map ( function(producto) {
-return ( `${producto.nombre} - precio: ${producto.precio }` );
+const nuevoArreglo = carrito.map ( (producto) => `${producto.nombre} - precio: ${producto.precio }` )
 
-} ) 
+carrito.forEach ( producto =>console.log( `${producto.nombre} - precio: ${producto.precio }` ) ); 
 
-const nuevoArreglo2 = carrito.forEach ( function(producto) {
-    console.log( `${producto.nombre} - precio: ${producto.precio }` );
     
-    } ) 
-    
+console.log(nuevoArreglo);
 
-    console.log(nuevoArreglo);
-    console.log(nuevoArreglo2);
